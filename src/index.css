@@ -1,0 +1,14 @@
+ul {
+  list-style: none;
+}
+
+ul div li {
+  display: inline;
+  color: #f3faff;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+}
