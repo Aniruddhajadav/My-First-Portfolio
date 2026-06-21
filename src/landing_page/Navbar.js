@@ -43,6 +43,11 @@ function Navbar() {
               </li>
               <li class="nav-item px-2 mx-2">
                 <a class="nav-link active" href="/">
+                  Education
+                </a>
+              </li>
+              <li class="nav-item px-2 mx-2">
+                <a class="nav-link active" href="/">
                   Contact
                 </a>
               </li>

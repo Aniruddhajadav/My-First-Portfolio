@@ -4,7 +4,7 @@ function Experience() {
   return (
     <div className="container mt-5 text-center">
       <h2>Experience</h2>
-      <p className="mx-5 px-5">
+      <p className="m-5 px-5 fs-5">
         I am an aspiring developer with a solid foundation in building web
         applications. While I am looking to secure my first professional role, I
         have actively developed my skills through rigorous academic coursework
