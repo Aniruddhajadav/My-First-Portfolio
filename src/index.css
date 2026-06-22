@@ -12,3 +12,28 @@ ul div li {
 a {
   text-decoration: none;
 }
+
+.footer {
+  background-color: #38b6ff;
+  color: #f3faff;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+}
+
+.footer-links span a {
+  padding: 0 0.5rem;
+  margin: 0 0.5rem;
+  color: #f3faff;
+}
+
+.footer-links span a:hover {
+  text-decoration: underline;
+}

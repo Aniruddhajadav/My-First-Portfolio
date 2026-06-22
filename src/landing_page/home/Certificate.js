@@ -4,7 +4,7 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 function Certificate() {
   return (
-    <div className="container mt-5 text-center">
+    <div className="container pt-5 text-center">
       <h2>Certificate</h2>
       <ul>
         <a

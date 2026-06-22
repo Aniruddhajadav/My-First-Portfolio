@@ -3,8 +3,8 @@ import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <>
-      <h2 className="my-5 text-center">Projects</h2>
+    <section id="project">
+      <h2 className="py-5 text-center">Projects</h2>
       <div className="container d-flex">
         <div className="row">
           <div className="col-2"></div>
@@ -39,7 +39,7 @@ function Projects() {
         </div>
       </div>
       <hr />
-    </>
+    </section>
   );
 }
 

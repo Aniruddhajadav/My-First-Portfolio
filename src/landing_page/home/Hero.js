@@ -7,8 +7,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function Hero() {
   return (
     <div
-      className="container-fluid mb-5 pb-5"
-      style={{ backgroundColor: "#38b6ff" }}
+      className="container-fluid mb-5"
+      style={{
+        backgroundColor: "#38b6ff",
+        padding: "5.75rem 1rem",
+      }}
     >
       <div className="row">
         <div className="col-6">
@@ -21,7 +24,7 @@ function Hero() {
         </div>
         <div className="col-6 d-flex align-items-start flex-column align-self-center">
           <h1 style={{ color: "white" }}>
-            I am Aniruddhasinh Jadav <br /> and
+            I am Aniruddhasinh Jadav <br /> and A
             <span style={{ color: "#f3faff", fontWeight: "bold" }}>
               <Typewriter
                 words={[" Student", " Gamer", " Full-stack Web Developer"]}

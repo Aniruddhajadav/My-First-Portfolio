@@ -2,7 +2,7 @@ import React from "react";
 
 function Experience() {
   return (
-    <div className="container mt-5 text-center">
+    <div className="container pt-5 text-center">
       <h2>Experience</h2>
       <p className="m-5 px-5 fs-5">
         I am an aspiring developer with a solid foundation in building web

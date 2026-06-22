@@ -10,7 +10,7 @@ import Contact from "./Contact";
 
 function HomePage() {
   return (
-    <>
+    <section id="home">
       <Hero />
       <Education />
       <Certificate />
@@ -18,7 +18,7 @@ function HomePage() {
       <Skills />
       <Experience />
       <Contact />
-    </>
+    </section>
   );
 }
 

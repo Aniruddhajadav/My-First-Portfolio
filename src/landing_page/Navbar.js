@@ -32,22 +32,22 @@ function Navbar() {
           >
             <ul class="navbar-nav" style={{ fontSize: "1.25rem" }}>
               <li class="nav-item px-2 mx-2">
-                <a class="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item px-2 mx-2">
-                <a class="nav-link active" href="/">
-                  Projects
-                </a>
-              </li>
-              <li class="nav-item px-2 mx-2">
-                <a class="nav-link active" href="/">
+                <a class="nav-link active" href="/#education">
                   Education
                 </a>
               </li>
               <li class="nav-item px-2 mx-2">
-                <a class="nav-link active" href="/">
+                <a class="nav-link active" href="/#project">
+                  Projects
+                </a>
+              </li>
+              <li class="nav-item px-2 mx-2">
+                <a class="nav-link active" href="/#skills">
+                  Skills
+                </a>
+              </li>
+              <li class="nav-item px-2 mx-2">
+                <a class="nav-link active" href="/#contact">
                   Contact
                 </a>
               </li>
