@@ -6,7 +6,7 @@ function Projects() {
     <section id="project">
       <h2 className="py-5 text-center">Projects</h2>
       <div className="container d-flex">
-        <div className="row">
+        <div className="row mb-5">
           <div className="col-2"></div>
           <div className="col-5">
             <ProjectCard
