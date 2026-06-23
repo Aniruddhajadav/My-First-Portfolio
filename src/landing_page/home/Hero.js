@@ -3,6 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 function Hero() {
   return (
@@ -56,10 +57,21 @@ function Hero() {
               <button
                 type="button"
                 class="btn btn-light border border-white btn-lg my-3"
-                style={{ lineHeight: "2rem" }}
               >
                 <GitHubIcon />
                 GitHub
+              </button>
+            </a>
+            <a
+              className="mx-1"
+              href="https://drive.google.com/file/d/16oxPBwXQd7_jj74Vlm4l9xXSz4GmghUT/view?usp=sharing"
+              target="_blank"
+            >
+              <button
+                type="button"
+                class="btn btn-light border border-white btn-lg my-3 fs-5"
+              >
+                Resume <OpenInNewIcon />
               </button>
             </a>
           </div>
