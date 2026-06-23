@@ -47,6 +47,15 @@ function Navbar() {
                 </a>
               </li>
               <li class="nav-item px-2 mx-2">
+                <a
+                  class="nav-link active"
+                  href="https://drive.google.com/file/d/16oxPBwXQd7_jj74Vlm4l9xXSz4GmghUT/view?usp=sharing"
+                  target="_blank"
+                >
+                  Resume
+                </a>
+              </li>
+              <li class="nav-item px-2 mx-2">
                 <a class="nav-link active" href="/#contact">
                   Contact
                 </a>
