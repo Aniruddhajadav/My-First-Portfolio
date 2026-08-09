@@ -11,7 +11,7 @@ A personal portfolio website built to showcase my journey, technical skills, and
 ## 🚀 Live Demo
 
 Check out the live deployment of the website here:  
-🔗 **[Live Portfolio Demo](https://my-first-portfolio-i829.onrender.com)**
+🔗 **[Live Portfolio Demo](https://aniruddhasinhjadav.dpdns.org)**
 
 ## ✨ Features
 
