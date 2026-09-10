@@ -50,6 +50,7 @@ export default function LabTabs() {
           <ul className="fs-5">
             <li>Git & GitHub</li>
             <li>npm</li>
+            <li>C++</li>
           </ul>
         </TabPanel>
       </TabContext>

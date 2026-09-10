@@ -68,6 +68,25 @@ function Hero() {
             </a>
             <a
               className="mx-1"
+              href="https://leetcode.com/u/Aniruddhajadav"
+              target="_blank"
+            >
+              <button
+                type="button"
+                class="btn btn-dark border border-dark btn-lg my-3"
+              >
+                <img
+                  src="media\images\leetcode-brands-solid.png"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                  }}
+                ></img>
+                LeetCode
+              </button>
+            </a>
+            <a
+              className="mx-1"
               href="https://drive.google.com/file/d/16oxPBwXQd7_jj74Vlm4l9xXSz4GmghUT/view?usp=sharing"
               target="_blank"
             >
