@@ -23,8 +23,11 @@ function Hero() {
             style={{ borderRadius: "100%", width: "50%", margin: "7.5rem 0" }}
           ></img>
         </div>
-        <div className="col-6 d-flex align-items-start flex-column align-self-center">
-          <h1 style={{ color: "white" }}>
+        <div
+          className="col-6 d-flex align-items-start flex-column align-self-center"
+          style={{ color: "white" }}
+        >
+          <h1>
             I am Aniruddhasinh Jadav <br /> and A
             <span style={{ color: "#f3faff", fontWeight: "bold" }}>
               <Typewriter
@@ -38,6 +41,7 @@ function Hero() {
               />
             </span>
           </h1>
+          <h2>"Engineers Turn Dreams into Reality"</h2>
           <div className="d-flex">
             <a
               className="mx-1"
@@ -60,6 +64,25 @@ function Hero() {
               >
                 <GitHubIcon />
                 GitHub
+              </button>
+            </a>
+            <a
+              className="mx-1"
+              href="https://leetcode.com/u/Aniruddhajadav"
+              target="_blank"
+            >
+              <button
+                type="button"
+                class="btn btn-dark border border-dark btn-lg my-3"
+              >
+                <img
+                  src="media\images\leetcode-brands-solid.png"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                  }}
+                ></img>
+                LeetCode
               </button>
             </a>
             <a

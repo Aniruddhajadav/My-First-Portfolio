@@ -7,11 +7,13 @@ import Projects from "../projects/Projects";
 import Skills from "../skills/Skills";
 import Experience from "./Experience";
 import Contact from "./Contact";
+import About from "./About";
 
 function HomePage() {
   return (
     <section id="home">
       <Hero />
+      <About />
       <Education />
       <Certificate />
       <Projects />
