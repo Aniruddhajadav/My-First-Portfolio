@@ -1,55 +1,82 @@
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import CardActionArea from "@mui/material/CardActionArea";
-import CardActions from "@mui/material/CardActions";
-
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import React, { useState, useEffect } from "react";
 
 export default function ProjectCard({
-  imageURL,
-  projectName,
-  projectDesription,
-  likedinURL,
-  githubURL,
+  title,
+  about,
+  time,
+  techStack,
+  keyFeatures,
+  slides = [],
+  linkedinUrl,
+  githubUrl,
+  live,
 }) {
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  useEffect(() => {
+    const slideTimer = setInterval(() => {
+      setSlideIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(slideTimer);
+  }, [slides.length]);
+
   return (
-    <Card sx={{ maxWidth: 500 }}>
-      <div className="border">
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="245"
-            image={imageURL}
-            alt="Wanderlust"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {projectName}
-            </Typography>
-            <Typography variant="body2" sx={{ color: "text.secondary" }}>
-              {projectDesription}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button size="small" color="primary">
-            <a href={likedinURL} target="_blank">
-              <LinkedInIcon />
-              Likedin
-            </a>
-          </Button>
-          <Button size="small" color="primary">
-            <a href={githubURL} target="_blank">
-              <GitHubIcon />
-              Github
-            </a>
-          </Button>
-        </CardActions>
+    <div className="row border">
+      <div className="col-6 border slideshow-container">
+        {slides.map((slide, index) => (
+          <div
+            className="fade"
+            key={index}
+            style={{
+              display: index === slideIndex ? "block" : "none",
+            }}
+          >
+            <img
+              src={slide}
+              alt="Project thumbnail"
+              style={{ height: "100%", width: "100%" }}
+            ></img>
+          </div>
+        ))}
       </div>
-    </Card>
+      <div className="col-6 border">
+        <div className="row border">
+          <h1 className="px-4">{title}</h1>
+          <p className="px-4">{about}</p>
+          <ul className="px-3">
+            {keyFeatures.map((feature, index) => (
+              <li key={index} style={{ padding: "5px" }}>
+                {feature}
+              </li>
+            ))}
+          </ul>
+          <p className="px-4">{time}</p>
+        </div>
+        <div className="row border">
+          <span className="px-4">{techStack}</span>
+        </div>
+        <div className="row border">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">
+              <a href={linkedinUrl} target="_blank">
+                LinkedIn
+              </a>
+            </li>
+            <li class="list-group-item">
+              {" "}
+              <a href={githubUrl} target="_blank">
+                GitHub
+              </a>
+            </li>
+            <li class="list-group-item">
+              {" "}
+              <a href={live} target="_blank">
+                Live
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 }
